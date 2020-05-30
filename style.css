@@ -1,0 +1,85 @@
+*
+{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration:none;
+	list-style: none;
+	user-select: none; 
+}
+body
+{
+	min-height: 100vh;
+	font-family: 'Roboto',sans-serif;
+	background-image: url("https://images.pexels.com/photos/260689/pexels-photo-260689.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+	 background-repeat: no-repeat;
+  	 background-attachment: fixed;
+  	 background-position: center;
+}
+.sidebar
+{
+	height:100%;
+	width: 80px;
+	background-color: #b30047;
+	position: fixed;
+	overflow: hidden;transition: .5s;
+	box-shadow: rgb(179, 0, 71) hsl(336, 100%, 35%);
+}
+.sidebar:hover
+{
+	width:350px;
+}
+.sidebar:hover .menu ul li span{
+	padding: 40px 70px;
+	opacity: 1;
+	pointer-events: visible;
+}
+.sidebar .menu
+{
+	display: flex;
+	width: 80px;
+	height: 100%;
+	background: #b30047;
+	color: #f2f2f2;
+}
+.menu a i{
+	margin: 40px 0 10px 20px;
+	font-size: 40px;
+	font-weight: bolder;
+}
+ .menu a span
+ {
+ 	position: absolute;
+ 	margin: 40px 32px;
+ 	font-size: 30px;
+ 	opacity: 0;
+ 	transition: 1.2s;
+ 	color: white;
+ }
+ .menu ul li
+ {
+ 	display: inline-flex;
+ 	padding:  0 20px;
+ 	cursor: pointer;
+ }
+ .menu ul li i
+ {
+ 	font-size: 35px;
+ 	padding: 40px 0 20px 0;
+ }
+ .menu ul li span
+ {
+ 	position: absolute;
+ 	color: #ececec;
+ 	letter-spacing: 1px;
+ 	padding: 40px 0 40px 0;
+ 	opacity: 0;
+ 	pointer-events: none;
+ 	font-size: 25px;
+ 	transition: .5s;
+ }
+ .menu ul li:hover span
+ {
+ 	margin-left:20px;
+ 	color: white;
+ }
